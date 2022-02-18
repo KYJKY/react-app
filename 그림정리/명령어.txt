@@ -1,0 +1,14 @@
+리액트 앱 시작하기
+npm run start
+
+리액트 앱 종료하기
+VSC TERMINAL에서 'ctrl + C' 누르기
+
+serve: npm을 통해 설치할 수 있는 간단한 웹서버
+serve -s build
+
+웹서버 설치
+npm install -g serve 
+
+웹서버 설치(일회성) - 웹서버를 받아서 실행시킬 때, 루트폴더(-s)의 build폴더를 실행하겠다.
+npx serve -s build 

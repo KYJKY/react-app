@@ -1,0 +1,37 @@
+리액트 앱 시작하기
+- VSC TERMINAL에서 'npm run start' 작성 후 enter
+
+리액트 앱 종료하기
+- VSC TERMINAL에서 'ctrl + C' 누르기
+
+
+
+
+디렉토리 구조
+- public
+    index.html이 존재하는 디렉토리
+    react의 컴포넌트는 index.html의 <div id="root"></div> 내에 들어가도록 기본적으로 설정되어있다.
+- src
+    컴포넌트 파일이 모여있는 디렉토리
+    
+
+
+배포하기
+    react 초기 설정에서 캐시 비우기 및 강력 새로고침 할 경우
+    - 개발자 도구에서 네트워크를 살펴보면 리소르를 1.6 MB나 불러오는 것을 볼 수 있음.
+    - create react-app의 개발환경은 생각보다 무겁다.
+    - 개발환경을 실행시킬 때: npm run start 사용
+    
+    그럼 빌드하기 위해서는?
+    - 빌드 실행: npm run build 
+    - 'npm run build' enter > build라는 디렉토리 생성
+    - build 디렉토리의 index.html > 공백이 없다 > 가볍게 하기 위해
+    - 'npm run build'는 리액트 앱을 경량화 한다.
+
+    실제로 서비스하기 위해서는 > build 안의 파일을 사용하자.
+    - document root: 웹서버가 문서를 찾는 최상위 디렉토리 > 현재: react-app
+    - document root의 build에 파일을 위치시키면 실 서버 환경 완성! 
+    - 웹서버 설치 후 npx serve -s build 로 실행 > 리소스 146KB!
+
+
+
